@@ -31,10 +31,10 @@ LOCAL_SRC_FILES	+= 	\
 
 LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../../exynos5-insignal/include \
-	$(TOP)/hardware/samsung_slsi/exynos/include
+	$(TOP)/hardware/samsung_slsi-cm/exynos/include
 
 LOCAL_SHARED_LIBRARIES += libMcClient
 
-include hardware/samsung_slsi/$(TARGET_SOC)/mobicore/common/LogWrapper/Android.mk
+include hardware/samsung_slsi-cm/$(TARGET_SOC)/mobicore/common/LogWrapper/Android.mk
 
 include $(BUILD_STATIC_LIBRARY)
