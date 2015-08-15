@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_BOARD_PLATFORM), exynos5)
-ifeq ($(TARGET_SLSI_VARIANT), insignal)
 ifeq ($(TARGET_SOC), exynos5420)
+ifeq ($(TARGET_SLSI_VARIANT), cm)
+
 exynos5420_dirs := \
 	mobicore \
 	gralloc \
@@ -24,7 +24,7 @@ exynos5420_dirs := \
 	libhwcutilsmodule \
 	libhdmimodule \
 	libhwjpeg \
-	libsecurepath 
+	libsecurepath
 
 ifeq ($(BOARD_USES_VIRTUAL_DISPLAY), true)
 exynos5420_dirs += \
@@ -38,6 +38,5 @@ endif
 
 include $(call all-named-subdir-makefiles,$(exynos5420_dirs))
 
-endif
 endif
 endif
